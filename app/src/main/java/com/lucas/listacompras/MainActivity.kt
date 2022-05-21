@@ -29,7 +29,9 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == 1 && resultCode == RESULT_OK) {
-            Toast.makeText(this, "", Toast.LENGTH_LONG)
+            Toast.makeText(this, "Autenticado", Toast.LENGTH_LONG).show()
+        } else {
+            finishAffinity()
         }
     }
 }
